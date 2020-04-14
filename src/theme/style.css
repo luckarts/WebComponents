@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #488aff;
+}
+
+html {
+    --font-family: var(--ion-default-font);
+}
+
+body.backdrop-no-scroll {
+    overflow: hidden;
+}
+
+
+.color {
+    --color-base: var(--color-base, ##020814) !important;
+}
+
+.inverse {
+    --color-base: white !important;
+}
+
+.color-primary {
+    --color-base: var(--color-primary, #3880ff) !important;
+    --ion-color-contrast: white !important;
+}
+
