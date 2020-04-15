@@ -1,5 +1,5 @@
 ## <wc-modal>
-> IMPORTANT: The Web Components are a work in progress and subject to major changes until 1.0 release.
+> IMPORTANT: The Web Components are a work in progress
 
 ## Installation
 comming soon !
