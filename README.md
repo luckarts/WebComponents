@@ -10,7 +10,7 @@ comming soon !
 ```html
 <wc-modal  closeButton></wc-modal>
 <wc-modal><header><h2>title</h2></header><p>content available</p><button>close</button></wc-modal>
-
+```
 ## API
 
 ### Properties/Attributes
