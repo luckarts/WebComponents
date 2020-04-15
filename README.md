@@ -1,4 +1,4 @@
-## <wc-modal>
+## <wc-icon>
 > IMPORTANT: The Web Components are a work in progress
 
 ## Installation
@@ -8,43 +8,25 @@ comming soon !
 ### Standard
 
 ```html
-<wc-modal  closeButton></wc-modal>
-<wc-modal>
-    <header>
-        <h2>title</h2>
-    </header>
-    <p>content available</p>
-    <button>close</button>
-</wc-modal>
+ <wc-icon>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" /><path d="M0 0h24v24H0z" fill="none" /></svg>
+    </wc-icon>
+```
+```html
+<wc-icon>
+        <img src="public/img/email.jpg">
+    </wc-icon>
 ```
 ## API
-
-### Properties/Attributes
-| Name | Type  | Description
-| ---- | ----  | -------
-| `closeButton`             | `boolean`             | active default button to leave the modal.
-| `open`                    | `boolean`             | to hide or show the modal`.
-|
 
 ### CSS Custom Properties
 
 | Name | Default | Description
 | ------------------------------------- | -------------------------------------------------- | ---
-| `--wc-modal-bgColor`           |  #white                  | Background color of the modal
-| `--wc-modal-top`               | 15vh                     | Top of the position fixed
-| `--wc-modal-left`              | 25%                      | Left of the position fixed
-| `--wc-modal-width`             | 600px                    | Modal min-width.
-| `--wc-modal-zIndex`            | 100                      | Z-index of the popup menu surface.
-| `--wc-modal-minHeight`         | 30vh                     | Modal min-height.
-| `--wc-modal-padding`           | 10px 15px                | Left and right padding of the modal
-| `--wc-modal-margin`            |  0px auto                | Left and right margin of the modal
-
-### Methods
-
-| Name  | Description
-| ------------------------------------| --------------------------------------------------
-| show() => void                      | Sets open to true.
-| hide()  => void                     | Sets open to false.
+| `--wc-icon-color`           |  #black                  |  base color of the icon
+| `--wc-icon-width`           | 24px                     | default width icon
+| `--wc-icon-height`          | 25%                      | default height icon
+| `--wc-icon-display`         | inline-block             | default display icon
 
 
 MIT © [Bachelerie Luc]()
