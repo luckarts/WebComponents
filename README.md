@@ -21,9 +21,9 @@ comming soon !
 
 ### Properties/Attributes
 | Name | Type  | Description
-| ---- | ---- | ------- | -----------
-| `closeButton` | `boolean` |  | active default button to leave the modal.
-| `open` | `boolean` | to hide or show the modal`.
+| ---- | ----  | -------
+| `closeButton`             | `boolean`             | active default button to leave the modal.
+| `open`                    | `boolean`             | to hide or show the modal`.
 |
 
 ### CSS Custom Properties
