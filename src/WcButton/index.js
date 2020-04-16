@@ -7,14 +7,22 @@ class WcButton extends HTMLElement {
 		shadowDom.appendChild(templates.content.cloneNode(true));
 	}
 	connectedCallback() {
-		let children = [].slice.call(this.children);
-		const button = document.createElement('button');
-		button.classList.add('button-native');
-		this.appendChild(button);
-		children.map(child => {
-			button.appendChild(child);
-			return children;
-		});
+		let slot = this.shadowRoot.querySelectorAll('slot');
+		let slots = slot[0].assignedNodes();
+		if (slots.length === 0) {
+			const alerteMessage = document.createElement('p');
+			alerteMessage.textContent = 'No content available';
+			this.shadowRoot.appendChild(alerteMessage);
+		} else {
+			let children = [].slice.call(this.children);
+			const button = document.createElement('button');
+			button.classList.add('button-native');
+			this.appendChild(button);
+			children.map(child => {
+				button.appendChild(child);
+				return children;
+			});
+		}
 	}
 
 	attributeChangedCallback(name, oldValue, newValue) {
@@ -22,7 +30,7 @@ class WcButton extends HTMLElement {
 			let attrib = this.getAttribute('color');
 			this.classList.add(`color-${attrib}`);
 		}
-		if (this.hasAttribute(name) && name !== 'color') {
+		if (name !== 'color') {
 			this.classList.add(`button-${name}`);
 		}
 	}

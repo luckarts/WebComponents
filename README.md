@@ -34,14 +34,24 @@ comming soon !
 }
 </style>
 ```
-## API
 
+### Properties/Attributes
+
+| Name | Type | Description
+| ------------------------------------- | -------------------------------------------------- | ---
+| `color`                               |        string               |  base color text button
+| `solid`                               |       boolean               |  button contain
+| `rounded`                             |       boolean               |  button with border radius
+| `outline`                             |       boolean               |  button style outline
+| `large`                               |       boolean               |  button size large
+| `small`                               |       boolean               |  button size small
+| `strong`                              |       boolean               |  button font strong
 ### CSS Custom Properties
 
 | Name | Default | Description
 | ------------------------------------- | -------------------------------------------------- | ---
-| `--color-primary`                     |  #488aff;                  |  base color of the icon
-| `--color-contrast`                    | white                      | default width icon
+| `--color-primary`                     |  #488aff;                  | base color of the icon
+| `--color-contrast`                    |  white                     | default width icon
 | `--color-button-outline-hover`        |                            | default height icon
 | `--color-bg-outline-hover`            |                            | default display icon
 | `--color-primary-tint-hover`          |                            | default display icon
