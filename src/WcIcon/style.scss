@@ -1,11 +1,23 @@
+:host(.color-primary) {
+    fill: var(--color-base);
+}
+
+:host(.color-contrast) {
+    fill: var(--color-contrast);
+}
+
+
+
+
+
 :host {
     display: var(--wc-icon-display, inline-block);
     align-items: var(--wc-icon-justify-items, center);
     justify-content: var(--wc-icon-justify-content, center);
     position: relative;
     vertical-align: middle;
-    fill: var(--wc-icon-color, black);
+    fill: var(--wc-icon-color, );
     stroke: none;
-    width: var(--wc-icon-width, 24px);
-    height: var(--wc-icon-height, 24px);
+    width: var(--wc-icon-width, 18px);
+    height: var(--wc-icon-height, auto);
 }

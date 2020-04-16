@@ -4,19 +4,21 @@
 
 :root {
     --color-primary: #488aff;
-}
-
-
-.color {
-    --color-base: var(--color-base, ##020814) !important;
-}
-
-.inverse {
-    --color-base: white !important;
+    --color-contrast: white !important;
+    --color-button-outline-hover: none;
+    --color-bg-outline-hover: none;
+    --color-primary-tint-hover: #669eff;
 }
 
 .color-primary {
-    --color-base: var(--color-primary, #3880ff) !important;
-
+    --color-base: var(--color-primary, #488aff) !important;
+    --color-contrast: white !important;
 }
 
+.color-contrast {
+    --color-base: var(--color-contrast, white) !important;
+}
+
+/* .hover-icon .button-native:hover wc-icon {
+    fill: var(--color-primary)
+} */
